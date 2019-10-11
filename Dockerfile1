@@ -1,1 +1,7 @@
 FROM php:7.3-apache-stretch
+RUN apt-get install mysql 5.7 && apt-get install apache2
+Run apt-get install 
+RUN php composer-setup.php
+RUN php -r "unlink('composer-setup.php');"
+RUN mv composer.phar /usr/local/bin/compressor
+
